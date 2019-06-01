@@ -68,14 +68,17 @@ keys.addEventListener('click', e => {
 
 		if (action === 'clear') {
 			console.log('clear key');
-			const firstValue = calculator.dataset.firstValue;
-			const operator = calculator.dataset.operator;
-			const secondValue = displayedContent;
-			display.textContent = calculate(firstValue, operator, secondValue);
+
+
+
 		}
 
 		if (action === 'calculate') {
 			console.log('calculate key');
+			const firstValue = calculator.dataset.firstValue;
+			const operator = calculator.dataset.operator;
+			const secondValue = displayedContent;
+			display.textContent = calculate(firstValue, operator, secondValue);
 		}
 
 		if (action === 'decimal') {
